@@ -159,7 +159,9 @@ def _ensure_columns(d, input_pvalue_fix):
         if BETA_SIGN in d: d[BETA_SIGN] = None
         d[ZSCORE] = None
         return d
-
+    
+    print(head(d))
+    
     d[EFFECT_ALLELE] = d[EFFECT_ALLELE].str.upper()
     d[NON_EFFECT_ALLELE] = d[NON_EFFECT_ALLELE].str.upper()
 
